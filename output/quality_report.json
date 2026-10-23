@@ -1,0 +1,87 @@
+{
+  "checks": {
+    "Исходное число строк movies": 4803,
+    "Исходное число строк credits": 4803,
+    "Полные дубликаты movies": 0,
+    "Полные дубликаты credits": 0,
+    "Фильмы без соответствия в credits": 0,
+    "Записи credits без соответствия в movies": 0,
+    "Некорректные числа: budget": 0,
+    "Бесконечные значения: budget": 0,
+    "Отрицательные значения: budget": 0,
+    "Некорректные числа: revenue": 0,
+    "Бесконечные значения: revenue": 0,
+    "Отрицательные значения: revenue": 0,
+    "Некорректные числа: runtime": 0,
+    "Бесконечные значения: runtime": 0,
+    "Отрицательные значения: runtime": 0,
+    "Некорректные числа: popularity": 0,
+    "Бесконечные значения: popularity": 0,
+    "Отрицательные значения: popularity": 0,
+    "Некорректные числа: vote_average": 0,
+    "Бесконечные значения: vote_average": 0,
+    "Отрицательные значения: vote_average": 0,
+    "Некорректные числа: vote_count": 0,
+    "Бесконечные значения: vote_count": 0,
+    "Отрицательные значения: vote_count": 0,
+    "Пустые или некорректные даты выхода": 1,
+    "Нулевые значения: budget": 1037,
+    "Нулевые значения: revenue": 1427,
+    "Нулевые значения: runtime": 35,
+    "Фильмы без пригодной для анализа оценки": 62,
+    "Фильмы без указанного жанра": 28,
+    "Фильмы без указанного режиссёра": 30,
+    "Итоговое число фильмов": 4803,
+    "Фильмы в финансовом анализе": 3229,
+    "Фильмы в анализе рейтингов": 3652
+  },
+  "initial_missing_movies": {
+    "budget": 0,
+    "genres": 0,
+    "homepage": 3091,
+    "id": 0,
+    "keywords": 0,
+    "original_language": 0,
+    "original_title": 0,
+    "overview": 3,
+    "popularity": 0,
+    "production_companies": 0,
+    "production_countries": 0,
+    "release_date": 1,
+    "revenue": 0,
+    "runtime": 2,
+    "spoken_languages": 0,
+    "status": 0,
+    "tagline": 844,
+    "title": 0,
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  "normalization": {
+    "budget_clean": {
+      "minimum": 1.0,
+      "maximum": 380000000.0,
+      "method": "Min-Max"
+    },
+    "revenue_clean": {
+      "minimum": 5.0,
+      "maximum": 2787965087.0,
+      "method": "Min-Max"
+    },
+    "runtime_clean": {
+      "minimum": 14.0,
+      "maximum": 338.0,
+      "method": "Min-Max"
+    },
+    "rating_clean": {
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "method": "Min-Max"
+    },
+    "popularity": {
+      "minimum": 0.0,
+      "maximum": 875.581305,
+      "method": "Min-Max"
+    }
+  }
+}
